@@ -31,9 +31,9 @@ export default function HomePage() {
 						transition: { duration: 1, delay: 0.5 },
 					}}
 				>
-					<p>
+					<h2>
 						Web3Mon is the FIRST and REAL NFT Multiverse game on Multichain.
-					</p>
+					</h2>
 				</motion.div>
 				<motion.div
 					whileInView={{
@@ -115,8 +115,8 @@ export default function HomePage() {
 					src="/img/preview.gif"
 					className={styles["homepage-preview-img"]}
 					alt="preview"
-					width={300}
-					height={300}
+					width={400}
+					height={400}
 				/>
 			</motion.div>
 		</div>
