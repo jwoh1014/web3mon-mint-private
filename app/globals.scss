@@ -1,0 +1,157 @@
+@font-face {
+	font-family: "mamablock";
+	src: url("/font/210L.ttf"); // pattern: /directoryName/file.extension
+}
+:root {
+	--max-width: 1100px;
+	--border-radius: 12px;
+	--font-mono: "mamablock", cursive;
+	/* 
+	--wallet-selector-backdrop-bg
+--wallet-selector-heading-color
+--wallet-selector-text-color
+--wallet-selector-sidebar-border-color
+--wallet-selector-selected-wallet-bg
+--wallet-selector-selected-wallet-bg-hover
+--wallet-selector-wallet-option-border-color
+--wallet-selector-wallet-option-bg-hover
+--wallet-selector-content-bg
+--wallet-selector-change-path-bg
+--wallet-selector-home-button-bg
+--wallet-selector-confirm-button-bg
+--confirm-button-bg-hover
+--wallet-selector-error
+--wallet-selector-close-button-bg-color
+--wallet-selector-close-button-fill-icon-colo
+--wallet-selector-spinner-color
+--wallet-selector-bottom-section
+--wallet-selector-mobile-text
+--wallet-selector-connected-green 
+*/
+}
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-mono);
+	caret-color: transparent;
+}
+html,
+body {
+	background: url("/img/website_poster.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+
+		--primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+		--secondary-glow: linear-gradient(
+			to bottom right,
+			rgba(1, 65, 255, 0),
+			rgba(1, 65, 255, 0),
+			rgba(1, 65, 255, 0.3)
+		);
+
+		--tile-start-rgb: 2, 13, 46;
+		--tile-end-rgb: 2, 5, 19;
+		--tile-border: conic-gradient(
+			#ffffff80,
+			#ffffff40,
+			#ffffff30,
+			#ffffff20,
+			#ffffff10,
+			#ffffff10,
+			#ffffff80
+		);
+
+		--callout-rgb: 20, 20, 20;
+		--callout-border-rgb: 108, 108, 108;
+		--card-rgb: 100, 100, 100;
+		--card-border-rgb: 200, 200, 200;
+	}
+}
+/*scrollbar*/
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-track {
+	background: #bbbbbb;
+}
+::-webkit-scrollbar-thumb {
+	background: rgb(26, 26, 26);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+/*scrollbar*/
+/* CSS */
+.button-86 {
+	all: unset;
+	width: 100px;
+	height: 30px;
+	font-size: 130%;
+
+	background: transparent;
+	border: none;
+	position: relative;
+	color: #f0f0f0;
+	cursor: pointer;
+	z-index: 1;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -99999;
+	transition: all 0.4s;
+}
+
+.button-86::before {
+	transform: translate(0%, 0%);
+	width: 100%;
+	height: 100%;
+	background: #585858;
+	border-radius: 10px;
+}
+
+.button-86::after {
+	transform: translate(10px, 10px);
+	width: 35px;
+	height: 35px;
+	background: #ffffff15;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 50px;
+}
+
+.button-86:hover::before {
+	transform: translate(5%, 20%);
+	width: 110%;
+	height: 110%;
+}
+
+.button-86:hover::after {
+	border-radius: 10px;
+	transform: translate(0, 0);
+	width: 100%;
+	height: 100%;
+}
+
+.button-86:active::after {
+	transition: 0s;
+	transform: translate(0, 5%);
+}

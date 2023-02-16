@@ -1,0 +1,53 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100vw;
+	background-color: #000000de;
+	color: white;
+	padding: 3rem;
+	backdrop-filter: blur(5px);
+	--webkit-backdrop-filter: blur(5px);
+}
+.container hr {
+	width: 30%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.container input {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1rem;
+	margin: 10px;
+	caret-color: #000 !important;
+}
+
+.container textarea {
+	caret-color: #000 !important;
+}
+.p {
+	margin-top: 3rem;
+}
+.p p {
+	font-size: 1.5rem;
+	font-weight: lighter;
+}
+
+.container button {
+	background-color: #000000de;
+	color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1rem;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.container button:hover {
+	background-color: #ffffff;
+	color: black;
+}

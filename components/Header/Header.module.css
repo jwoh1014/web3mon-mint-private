@@ -1,0 +1,21 @@
+.header {
+	backdrop-filter: blur(5px);
+	background: rgba(0, 0, 0, 0.6);
+	align-items: center;
+	height: 12vh;
+	padding: 1rem;
+	color: white;
+	display: flex;
+	border-bottom: 1px solid rgba(190, 190, 190, 0.299);
+}
+.header-logo {
+	flex: 1;
+	width: 60px;
+}
+
+.header-login {
+	text-align: right;
+}
+.logo {
+	width: 150px;
+}
