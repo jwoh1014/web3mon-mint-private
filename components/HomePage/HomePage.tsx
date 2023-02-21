@@ -89,7 +89,7 @@ export default function HomePage() {
           <div className={styles["homepage-icon"]}>
             <FaDiscord
               onClick={() => {
-                window.open("https://discord.com/invite/VvkxdntUTw");
+                window.open("https://discord.com/invite/FSreWHSbyA");
               }}
               size="45px"
             />
