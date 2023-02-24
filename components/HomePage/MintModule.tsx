@@ -38,7 +38,7 @@ export default function MintModule() {
 					args: {},
 					amount:
 						wlMintPrice == "0"
-							? utils.format.parseNearAmount("0.00925")!
+							? utils.format.parseNearAmount("0.015")!
 							: utils.format.parseNearAmount(price)!,
 					gas: "200000000000000",
 				});
